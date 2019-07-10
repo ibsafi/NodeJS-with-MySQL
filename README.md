@@ -1,42 +1,46 @@
-# Node.js & MySQL
-
-### Overview
-
-This assignment is aiming to show the ability of coding using `mysql` and `inquirer` libraries in NodeJS language. And provide a solution application over CLI for interfacing and changing values in SQL. 
-
-### Usage of the Script
-*This assignment has three challenge levels, as each file represents a stage of those challenges:
-
-#Challenge #1:
-the user can access the access the system and buy from it and then chackout:
+# Store CLI inventory using NodeJS with MySQL
 
 
-Here's an example for the application in the figure below
+## Overview
 
-![Stage(1) App Example](./stage1.png)
+This application is aiming to implement the idea of store inventory with Command Line Interface and three levels of accessibility using NodeJS with `mysql` and `inquirer` libraries. 
 
-#Challenge #2:
-the user as a `Manager` can access the system and make actions with data within database as of these options:
+## Project Dependencies:
+This app requires this node package: `mysql` and `inquirer`.
 
-* View Products for Sale, the app should list every available item: the item IDs, names, prices, and quantities.
+## Basic Usage:
+The app runs by navigating into the directory of the app folder, and then type the command  `node <NodeJS file name>` in the command line terminal to run it.
+ 
+## Usage of the Scripts
+This application supports three types of users (customer, manager, and supervisor) in three script files, as each file represents one user type:
 
-* View Low Inventory, then it should list all items with an inventory count lower than five.
+### User Type 1 (Customer):
+The user as a `regular Customer` can access the store and buy from it and then chackout, here's an example for `customer` user type in the application.
 
-* Add to Inventory, your app should display a prompt that will let the manager "add more" of any item currently in the store.
+![User type 1 example](./images/type1.png)
 
-* Add New Product, it should allow the manager to add a completely new product to the store.
+### User Type 2 (Manager):
+The user as a `Manager` can access the system and make actions with data within database with these privileges:
 
-Here's an example for the application in the figure below
+  * View Products for Sale, the app should list every available item: the item IDs, names, prices, and quantities.
 
-![Stage(2) App Example](./stage2.png)
+  * View Low Inventory, then it should list all items with an inventory count lower than five.
 
-#Challenge #3:
-the user as a `Supervisor` can access the system and make actions with data within database as of these options:
+  * Add to Inventory, your app should display a prompt that will let the manager "add more" of any item currently in the store.
 
-    * View Product Sales by Department, the app should display a summarized table in their terminal/bash window. Use the table below as a guide.
-   
-    * Create New Department
+  * Add New Product, it should allow the manager to add a completely new product to the store.
 
-Here's an example for the application in the figure below
+Here's an example for `Manager` user type in the application.
 
-![Stage(3) App Example](./stage3.png)
+![User type 2 example](./images/type2.png)
+
+### User Type 3 (Supervisor):
+the user as a `Supervisor` can access the system and make actions with data within database with these privileges:
+
+  * View Product Sales by Department, the app should display a summarized table in their terminal/bash window. Use the table below as a guide.
+
+  * Create New Department
+
+Here's an example for `Supervisor` user type in the application.
+
+![User type 3 example](./images/type3.png)
